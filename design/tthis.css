@@ -1,0 +1,65 @@
+#translate-this .translate-this-button {
+background: url(images/tt-btn1.png)!important;
+border: 1px solid #222;
+border-radius: 5px;
+float: left;
+overflow: hidden;
+position: relative;
+text-indent: -2000px;
+visibility: visible!important;
+}
+.ttb-panel {
+display: none;
+font-size: 12px;
+background:rgba(0, 0, 0, 0.5)!important;
+border:none!important;
+font-family: Arial;
+color:#fff;
+}
+#ttb-paneltop.ttb-paneltop{
+background:transparent!important;
+}
+.ttb-panel.notranslate {
+display: none;
+font-size: 12px;
+text-align: left;
+background:rgba(0, 0, 0, 0.5);
+border: none!important;
+font-family: Arial;
+color: #fff;
+}
+.ttb-paneltop{
+background:rgba(0, 0, 0, 0.5)!important;
+border: none!important;
+}
+.ttb-panel.notranslate div {
+background:rgba(0, 0, 0, 0.5)!important;
+border: none!important;
+font-size: 14px!important;
+}
+a.ttb-close{
+background:#222!important;
+color:#fff!important;
+font-size:14px!important;
+}
+.ttb-panel.notranslate div a{
+background:none transparent!important;
+border:none!important;
+font-size: 14px!important;
+color:#fff;
+}
+.ttb-panel a {
+color:#fff;
+}
+.ttb-panel.notranslate div a:hover {
+background:rgba(0, 0, 0, 0.5)!important;
+color:#ff2400!important;
+border:1px solid #222!important;
+outline: 1px solid #ff2400!important;
+text-decoration:none!important;
+}
+.ttb-cta:hover {
+background:transparent;
+outline: 1px solid #ff2400!important;
+text-decoration:none!important;
+}
