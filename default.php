@@ -14,7 +14,7 @@ Contact Vanilla Forums Inc. at support [at] vanillaforums [dot] com
 $PluginInfo['TranslateThis'] = array(
    'Name'=>'TranslateThis',
    'Description' => "This plugin adds a TranslateThis button on the panel. It will translate the whole page. ",
-   'Version' => '1.0',
+   'Version' => '1.1',
    'Author' => "VrijVlinder",
    'AuthorEmail' => 'contact@vrijvlinder.com',
    'AuthorUrl' => "http://www.vrijvlinder.com"
@@ -37,23 +37,13 @@ class TranslateThis_Plugin extends Gdn_Plugin {
  public function Base_Render_Before($Sender) {
   $Sender->AddJsFile('http://x.translateth.is/translate-this.js');
   $Sender->AddJsFile('plugins/TranslateThis/tthis.js');
-  $Sender->AddJsFile('plugins/TranslateThis/translatethis.js');
-  $Sender->AddCssFile('plugins/TranslateThis/design/tthis.css');
+   $Sender->AddCssFile('plugins/TranslateThis/design/tthis.css');
+
+   $TThisModule = new TThisModule($Sender);
+      $Sender->AddModule($TThisModule);
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
